@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+
+:root {
+  --primaryColor: hsl(228, 66%, 53%);
+  --primaryColorLight: hsl(223, 100%, 97%);
+  --primaryColorDark: hsl(216, 58%, 28%);
+  --gradientLight: rgb(114, 145, 255);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(240, 25%, 97%);
+  --blackColor: hsl(0, 0%, 18%);
+  --blackColorLight: hsl(233, 3%, 51%);
+  --shadowColor: hsl(219, 63%, 95%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --orangeColor: hsl(25, 84%, 53%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 10px;
+}
+
+.Subscribe .secContent {
+  background: var(--hoverLivro);
+  border-radius: 30px;
+  padding: 2rem 1.5rem;
+  margin-top: 9rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.Subscribe .secContent .title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 147%;
+  color: #FFBC00;
+  grid-column: 2;
+}
+
+.imageSUB {
+  display: flex;
+}
+
+.Subscribe .secContent h1 {
+  color: var(--whiteColor);
+  font-size: var(--h1FontSize);
+}
+
+.Subscribe .secContent p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 147%;
+  color: azure;
+  grid-column: 2;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Subscribe .secContent .btn {
+  background: rgb(114, 145, 255);
+  border: 2px solid var(--whiteColor);
+  font-weight: 600;
+  border-radius: var(--borderRadius);
+  max-width: 200px;
+  margin: auto;
+}
+
+.Subscribe .secContent .btn:hover {
+  background: linear-gradient(40deg, rgb(90, 122, 239), rgb(42, 73, 198));
+}
+
+.Subscribe .secContent .image-column2 img {
+  position: absolute;
+  width: 380px;
+  height: auto;
+  right: 130px;
+  top: 362vh;
+  transform: translateY(9%);
+  z-index: 10;
+}
+
+@media screen and (min-width: 1024px) {
+  .Subscribe .secContent {
+    padding: 2rem 3rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .Subscribe .secContent {
+    padding: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .Subscribe .secContent {
+    padding: 4rem 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+  
+  }
+  .title {
+    padding-right: 2rem;
+  }
+  #textlivro {
+    padding-right: 3rem;
+  }
+  .Subscribe .secContent .text-column .title {
+   
+   text-align: center;
+   
+  }
+  .Subscribe .secContent .image-column2 img {
+    width: 170px;
+    right: 195px;
+    transform: translateY(970%);
+  }
+  .Subscribe .secContent .image-column img {
+    width: 180px;
+    height: 100px !important;
+  }
+  .Subscribe {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Subscribe .secContent h1 {
+    font-size: var(--biggestFontSize);
+  }
+  .Subscribe .secContent p {
+    font-size: var(--h3FontSize);
+  }
+  .Subscribe .secContent .btn {
+    font-size: var(--h3FontSize);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .Subscribe .secContent {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr;
+  }
+}

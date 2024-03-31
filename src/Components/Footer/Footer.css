@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+:root {
+  --primaryColor: hsl(228, 66%, 53%);
+  --primaryColorLight: hsl(223, 100%, 97%);
+  --primaryColorDark: hsl(216, 58%, 28%);
+  --gradientLight: rgb(114, 145, 255);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(240, 25%, 97%);
+  --blackColor: hsl(0, 0%, 18%);
+  --blackColorLight: hsl(233, 3%, 51%);
+  --shadowColor: hsl(219, 63%, 95%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --orangeColor: hsl(25, 84%, 53%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 10px;
+}
+
+.Footer {
+  /* background:url("../../Assets/BG1.png"); */
+  padding: 2rem 0;
+}
+.Footer .secContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* creates five columns */
+ /* adjust the space between columns */
+  align-items: start;
+  margin-left: 3rem;
+  margin-right: 3rem; /* aligns items to the start of the container */
+  
+}
+.footerColumn a {
+  font-family: 'Lato', sans-serif; /* Lato font with a sans-serif fallback */
+  font-size: 15px; /* Set the font size */
+  font-weight: 500; /* Make the font semi-bold */
+  line-height: 20px; /* Set the line height to control how text is spaced */
+  text-align: left; /* Align the text to the left */
+  color: #4c4848; /* Set the text color (change as needed) */
+  text-decoration: none; /* Remove the underline from links */
+  margin-right: 10px; /* Adds a gap between the links */
+  display: block; /* Each link will take up the full width available */
+  margin-bottom: 5px; /* Adds space below each link */
+}
+.contactInfo{
+  font-family: 'Lato', sans-serif; /* Lato font with a sans-serif fallback */
+  font-size: 15px; /* Set the font size */
+  font-weight: 500; /* Make the font semi-bold */
+  line-height: 24px; /* Set the line height to control how text is spaced */
+  text-align: left; /* Align the text to the left */
+  color: #4c4848; /* Set the text color (change as needed) */
+  text-decoration: none; /* Remove the underline from links */
+  margin-right: 10px; /* Adds a gap between the links */
+  display: block; /* Each link will take up the full width available */
+  margin-bottom: 5px;
+}
+
+.Footer .footerColumn {
+  display: flex;
+  flex-direction: column; /* aligns items vertically */
+}
+
+.Footer .footerColumn a,
+.Footer .footerColumn span,
+.Footer .footerColumn form {
+  margin-bottom: 10px; /* adds space between elements */
+}
+
+.Footer .footerBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px; /* adjust as necessary */
+}
+
+.Footer .footerBottom .line {
+  height: 1px;
+  width: 80%;
+  background-color: gray; /* or use your color of choice */
+  margin-bottom: 10px;
+}
+
+.Footer .footerBottom .copyRight {
+  text-align: center;
+  color: gray; /* or use your color of choice */
+}
+
+.footerLogo{
+  height: 55px;
+  width: 180px;
+}
+.linkTitle{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 147%; 
+
+  color: #2A9386;
+}
+
+.form-container {
+  position: relative; /* Set the position context for the absolute positioning of the button */
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+/* Style the input field */
+.input-email {
+  width: 423px;
+  height: 43px;
+  border: 1px #B3B3B3; /* Assuming you want a border */
+  background-color: #D9D9D9; /* This is a guess based on your earlier style */
+  border-radius: 21.5px; /* Rounded corner on the top left */
+  outline: none; /* Removes the outline */
+  font-size: 16px; /* Adjust as needed */
+  padding-left: 15px; /* Padding inside the input */
+  padding-right: 80px; /* Space for the button */
+  opacity: 1;/* Add padding to make room for the button */
+}
+.footerColumn .social-icons {
+  display: flex; /* Aligns icons in a row */
+  align-items: center; /* Centers icons vertically */
+  gap: 2px; /* Spacing between icons */
+}
+
+.footerColumn .social-icons a {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Makes the background circle */
+  background-color: #9c9999; /* Gray background */
+  color: white; /* Icon color */
+}
+
+/* Style each icon specifically */
+.footerColumn .social-icons .icon {
+  font-size: 14px; /* Adjust the size of the icon */
+}
+
+/* Hover effect */
+.footerColumn .social-icons a:hover {
+  background-color: #A9A9A9; /* Darker gray on hover */
+}
+
+/* Style the button */
+.subscribe-button {
+ 
+  background-color: #2A9386;
+  position: absolute;
+  width: 80px;
+  height: 30px; /* Adjusted to match the height of the input */
+  border-radius: 21.5px;
+  right: 2%; /* Adjust as needed to position within the form */
+  top: 13%; /* Align to the top of the form-container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Text color */
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.subscribe-button-text {
+  font-size: 14px; /* Adjust as needed */
+  color: white; /* Text color */
+  /* No need for width, height, top, left, gap, or opacity */
+}
+/* You may want to add some hover effects for the button */
+.subscribe-button:hover {
+  background-color: #2A9386;
+  color: white;
+}
+
+/* Adjustments for the form container */
+.form-container {
+  width: 100%; /* Set to the width you desire */
+  max-width: 400px; /* Maximum width of the form */
+}
+
+/* .Footer .secContainer {
+  gap: 1.5rem;
+  text-align: center;
+  align-items: center;
+}
+.Footer .secContainer .logoDiv .footerLogo {
+  display: flex;
+  color: var(--primaryColor);
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  font-size: var(--h1FontSize);
+}
+.Footer .secContainer .logoDiv .footerLogo .icon {
+  font-size: 30px;
+  color: var(--primaryColor);
+}
+.Footer .secContainer .logoDiv p {
+  max-width: 200px;
+  text-align: center;
+  margin: auto;
+  padding: 1rem 0;
+  line-height: 1rem 0;
+  color: var(--primaryColorDark);
+  opacity: 0.5;
+  font-weight: 500;
+}
+.Footer .secContainer .logoDiv .socials {
+  gap: 0.5rem;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.Footer .secContainer .logoDiv .socials .icon {
+  font-size: 30px;
+  background: var(--primaryColor);
+  border-radius: var(--borderRadius);
+  padding: 7px;
+  color: var(--whiteColor);
+}
+.Footer .secContainer .logoDiv .socials .icon:hover {
+  background: var(--primaryColorDark);
+}
+.Footer .secContainer .footerLinks {
+  display: grid;
+  row-gap: 1rem;
+}
+.Footer .secContainer .footerLinks .linkTitle {
+  padding-bottom: 0.5rem;
+  color: var(--primaryColorDark);
+  font-weight: 700;
+}
+.Footer .secContainer .footerLinks li:hover {
+  transform: translateX(10px);
+}
+.Footer .secContainer .footerLinks li:hover a {
+  color: var(--primaryColor);
+  opacity: 1;
+}
+.Footer .secContainer .footerLinks a,
+.Footer .secContainer .footerLinks .phone,
+.Footer .secContainer .footerLinks .email,
+.Footer .secContainer .footerLinks .website {
+  color: var(--primaryColorDark);
+  opacity: 0.6;
+  font-size: 13px;
+  font-weight: 500;
+}
+.logonav{
+  width: 45%;
+  height:auto;
+} */
+@media screen and (max-width: 448px) {
+  .Footer .secContainer {
+    grid-template-columns: repeat(1, 1fr);
+    align-items:center;
+    text-align: center;
+  
+  }
+  .footerColumn{
+    align-items: center;
+    padding-top: 2rem;
+  }
+  .footerBottom{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .Footer .secContainer .footerLinks {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 680px) {
+  .Footer .secContainer {
+    grid-template-columns: repeat(1, 1fr);
+    align-items:center;
+    text-align: center;
+  }
+  .footerColumn{
+    align-items: center;
+    padding-top: 2rem;
+  }
+  .footerBottom{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .Footer .secContainer .footerLinks {
+    justify-content: center;
+  }
+}
+/* @media screen and (min-width: 960px) {
+  .Footer .secContainer {
+    padding: 2rem 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Footer .secContainer .footerLinks {
+    align-items: start;
+  }
+  .Footer .secContainer .footerLinks li {
+    padding: 0.2rem 0;
+  }
+} */
+/*# sourceMappingURL=Footer.css.map */

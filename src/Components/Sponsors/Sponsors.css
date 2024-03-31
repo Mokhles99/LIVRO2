@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+:root {
+  --primaryColor: hsl(228, 66%, 53%);
+  --primaryColorLight: hsl(223, 100%, 97%);
+  --primaryColorDark: hsl(216, 58%, 28%);
+  --hoverLivro:#1D8D7F;
+  --gradientLight: rgb(114, 145, 255);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(240, 25%, 97%);
+  --blackColor: hsl(0, 0%, 18%);
+  --blackColorLight: hsl(233, 3%, 51%);
+  --shadowColor: hsl(219, 63%, 95%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --orangeColor: hsl(25, 84%, 53%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 10px;
+}
+
+/* .Sponsors {
+
+  height: 832px;
+  width: 100%; 
+  background: url("../../Assets/LIVRO6.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-top: -240px;
+
+} */
+/* mok */
+/* .Sponsors .aboutSponsorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  max-width: 1200px; 
+  margin: auto;
+  padding: 0 50px; 
+  gap: 50px; 
+}
+
+.Sponsors .aboutSponsorImage,
+.Sponsors .aboutSponsorText {
+  flex: 1; 
+}
+
+
+@media (max-width: 768px) {
+  .Sponsors .aboutSponsorContainer {
+    flex-direction: column;
+  }
+  
+  .Sponsors .aboutSponsorImage {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  .Sponsors .aboutSponsorText {
+    text-align: center; 
+  }
+} */
+
+
+/* mok */
+
+/*mok2*/
+.Sponsors {
+
+  height: 832px;
+  width: 100%; 
+  background: url("../../Assets/LIVRO6.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-top: -240px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20%; 
+  padding-right: 2rem;/* Ajustez le padding pour centrer le contenu */
+  /* position: relative; */
+}
+
+.aboutSponsorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Espace entre l'image et le texte */
+  flex-wrap: wrap; /* Wrap les éléments sur les petits écrans */
+}
+
+.aboutSponsorImage {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aboutSponsorImage img {
+  max-width: 70%;
+  height: auto; /* Conserve le rapport hauteur/largeur original */
+}
+
+.Sponsors .aboutSponsorText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrer le contenu verticalement */
+  max-width: 540px; /* Ou la largeur maximale souhaitée pour le texte */
+  padding: 0; /* Ajustez ou supprimez le padding si nécessaire */
+  text-align: left; /* Alignement du texte à gauche */
+  margin-left: 5%; /* Ajustez la marge pour positionner le texte à droite de l'image */
+}
+
+.Sponsors .aboutSponsorText h1 {
+  font-size: var(--biggestFontSize); /* Utilisez votre variable ou définissez une taille de police spécifique */
+  color: #ffffff; /* Couleur du texte */
+  margin-bottom: 0.5rem; /* Espace entre le h1 et le paragraphe */
+  font-weight: 600; /* La graisse de la police pour h1 */
+}
+
+.Sponsors .aboutSponsorText p {
+  font-size: var(--h2FontSize); /* Utilisez votre variable ou définissez une taille de police spécifique */
+  color: #ffffff; /* Couleur du texte */
+  line-height: 1.5;
+  text-align: justify; /* Justifier le texte */
+  text-justify: inter-word; /* Hauteur de ligne pour le paragraphe */
+}
+.cardDiv{
+  position :relative;
+  padding: 2rem 1rem;
+  background: hsl(0deg 0% 100% / 60%);
+  border-radius: 10px;
+  gap: 1rem;
+
+
+  label{
+      display:block;
+      color:var(--textColor);
+      padding-bottom: 10px;
+      font-size:13px;
+      font-weight: 500;
+
+  }
+  .label_total{
+
+   justify-content: space-between;
+   align-items:center;    
+   .total{
+      color : var(--textColor);
+      font-size:18px;
+      padding-bottom: 10px;
+   }
+
+  }
+  .input{
+
+        height:40px;
+        padding: 0 1rem;
+        background: rgb(239 239 239 / 67%);
+        border-radius: 3rem;
+
+      input{
+
+          background :none;
+          border:none;
+          outline:none;
+          width:100%;
+          font-size:13px;
+          font-weight: 500;
+          &::placholder{
+              font-size:13px;
+          }
+      }
+
+      .icon{
+          font-size:18px;
+          color:var(--PrimaryColor)!important;
+          margin-left: 10px;
+
+      }
+       .input[type=range]{
+          background: blue;
+       } 
+  }
+
+
+  .searchOptions{
+      position: absolute;
+    
+      background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+      width:max-content;
+      bottom: -0.7rem;
+      column-gap : .8rem;
+      padding: 5px 1rem;
+      border-radius: 3rem;
+      left: 50%;
+      transform:translate(-50%);
+      justify-content: center;
+      cursor:pointer;
+
+
+
+      .icon{
+          font-size:18px; 
+      }
+      span{
+
+          font-size:13px;
+
+      }
+  }
+}
+/* .iconContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #F1F1F1; 
+  padding: 2rem;
+  border-radius: var(--borderRadius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: -50px;
+} */
+.iconContainer {
+  display: flex;
+  position: relative;
+  top: -210px;
+  justify-content: space-evenly; /* Use space-evenly to distribute space around items */
+  align-items: flex-start;
+  background-color: #F1F1F1; /* Adjust the background color as needed */
+  padding: 1rem;
+  border-radius:40px;
+  box-shadow: 0 4px 8px rgb(29, 141, 127);
+  margin-top: -50px; /* Adjust for desired overlap */
+  max-width: 1000px; /* Set a max-width to control the width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon {
+  text-align: center;
+  max-width: 200px; /* Ajustez selon la largeur souhaitée */
+}
+
+.icon img {
+  margin-bottom: 1rem; 
+  margin-top: 3rem;
+  height: 50px;
+  width: 60px;/* Ajustez l'espace entre l'image et le titre */
+}
+
+.icon h3 {
+  font-size: 1.25rem; /* Ajustez la taille de la police */
+  color: var(--hoverLivro); /* Ajustez la couleur du texte */
+  margin-bottom: 0.5rem; /* Ajustez l'espace entre le titre et le paragraphe */
+}
+
+.icon p {
+  font-size: 0.875rem; /* Ajustez la taille de la police */
+  color: var(--blackColor);
+  padding-top: 10px;
+  /* line-height: 2; */
+  text-align: justify; /* Justifier le texte */
+  text-justify: inter-word;
+}
+
+@media (max-width: 768px) {
+  .iconContainer {
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+  }
+
+  .icon:not(:last-child) {
+    margin-bottom: 2rem; /* Ajustez l'espace entre les icônes pour les écrans mobiles */
+  }
+  .icon {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .Sponsors {
+    height: 1000px;
+  }
+
+  .Sponsors .secContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .Sponsors .aboutSponsorContainer {
+    flex-direction: column-reverse; /* Image en bas et texte en haut */
+    align-items: center; /* Centre les éléments sur l'axe croisé */
+  }
+
+  .Sponsors .aboutSponsorText {
+    margin-left: 0; /* Retirez la marge gauche sur les petits écrans */
+    margin-top: 2rem; /* Espace au-dessus du texte quand au-dessus de l'image */
+    text-align: center; /* Centrer le texte sur les petits écrans */
+  }
+
+  .Sponsors .aboutSponsorText h1,
+  .Sponsors .aboutSponsorText p {
+    text-align: center; /* Centrer le texte des titres et paragraphes sur les petits écrans */
+  }
+  .aboutSponsorImage {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .aboutSponsorText {
+    justify-content: center;
+  }
+}
+
+/*mok2*/
+.Sponsors .secContainer {
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.Sponsors .secContainer img {
+  width: 80px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0.3;
+}
+.Sponsors .secContainer img:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 480px) {
+  .Sponsors .secContainer span:nth-child(2) {
+    display: none;
+  }
+  .Sponsors .secContainer span:nth-child(3) {
+    display: none;
+  }
+  .Sponsors{
+    height: 1000px;
+  }
+
+  .iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px; 
+  }
+
+  .icon {
+    width: 100%;
+    margin-bottom: 2rem; /* Ajouter de l'espace entre les icônes */
+  }
+
+  .icon .imgIC{
+    padding-left: 2rem !important;
+    
+  }
+}
+@media screen and (max-width: 680px){
+  .Sponsors {
+    height: 1200px;
+    width: 100%; 
+    background: url("../../Assets/LIVRO6.png");
+    
+    background-size:cover;
+    background-repeat: repeat;
+   
+  }
+  .aboutSponsorContainer{
+    
+
+  }
+  .Sponsors .aboutSponsorText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer le contenu verticalement */
+    max-width: 500px; /* Ou la largeur maximale souhaitée pour le texte */
+    padding: 0; /* Ajustez ou supprimez le padding si nécessaire */
+    text-align:center;
+    padding-right: 4rem;
+    transform: translateY(-50%); /* Alignement du texte à gauche */
+    /* Ajustez la marge pour positionner le texte à droite de l'image */
+  }
+  
+  .Sponsors .aboutSponsorText h1 {
+    font-size: var(--biggestFontSize); /* Utilisez votre variable ou définissez une taille de police spécifique */
+    color: #ffffff; /* Couleur du texte */
+    margin-bottom: 0.5rem; /* Espace entre le h1 et le paragraphe */
+    font-weight: 600; /* La graisse de la police pour h1 */
+  }
+  
+  .Sponsors .aboutSponsorText p {
+    font-size: 100; /* Utilisez votre variable ou définissez une taille de police spécifique */
+    color: #ffffff; /* Couleur du texte */
+    line-height: 1.2;
+    text-align: justify; /* Justifier le texte */
+    text-justify: inter-word; /* Hauteur de ligne pour le paragraphe */
+  }
+
+  .aboutSponsorImage{
+    transform: translateY(-65%) rotate(-8deg);
+   
+    height: 200px;
+   
+    width: auto;
+  
+  }
+ .iconContainer{
+transform: translateY(-28.5%);
+right: -11%;
+
+  }
+
+  .iconContainer .icon
+  {
+    margin:-1rem;
+  }
+}
+@media screen and (min-width: 860px) {
+  .Sponsors .secContainer {
+    gap: 7rem;
+  }
+  .Sponsors .secContainer span img {
+    width: 100px;
+  }
+}/*# sourceMappingURL=Sponsors.css.map */

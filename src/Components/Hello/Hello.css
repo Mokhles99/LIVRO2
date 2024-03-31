@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+
+:root {
+  --primaryColor: hsl(228, 66%, 53%);
+  --primaryColorLight: hsl(223, 100%, 97%);
+  --primaryColorDark: hsl(216, 58%, 28%);
+  --gradientLight: rgb(114, 145, 255);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(240, 25%, 97%);
+  --blackColor: hsl(0, 0%, 18%);
+  --blackColorLight: hsl(233, 3%, 51%);
+  --shadowColor: hsl(219, 63%, 95%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --orangeColor: hsl(25, 84%, 53%);
+  --biggestFontSize: 2rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 10px;
+}
+
+.Hello {
+  height: auto;
+  width: 100vw;
+  padding-top: 9rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.secContainerHello {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.IMGColonne2 {
+  height: 420.08px;
+  width: 450.14px;
+  position: relative;
+  top: -70px;
+}
+
+.column, .column3 {
+  padding: 20px;
+}
+
+.column3 {
+  display: grid;
+  grid-template-rows: auto auto;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.column3 .row {
+  display: flex;
+  flex-direction: column;
+}
+
+.column3 .row:first-child {
+  align-self: start;
+}
+
+.column3 .row:last-child {
+  align-self: end;
+}
+
+.top-row {
+  justify-content: start;
+}
+
+.bottom-row {
+  justify-content: end;
+}
+
+.image-top {
+  max-height: 130px;
+  width: 200px;
+}
+
+.image-bottom {
+  max-height: 250.75px;
+  width: 200px;
+}
+
+@media screen and (max-width: 480px) {
+  .secContainerHello {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  
+  .IMGColonne2 {
+    padding-left: 2rem;
+  }
+  
+  .IMGcolonne1 {
+    padding-right: 2rem;
+  }
+  
+  .column3 {
+    padding-left: 9rem;
+    padding-bottom: 15rem;
+  }
+  
+  .image-top {
+    margin-bottom: 7rem;
+  }
+  
+  .Hello .secContainer h1 {
+    font-size: var(--biggestFontSize);
+  }
+  
+  .Hello .secContainer p {
+    font-size: var(--h3FontSize);
+    line-height: 30px;
+  }
+  
+  .Hello .secContainer .icon {
+    margin-right: 5px;
+  }
+  
+  .Hello .secContainer .btn {
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .Hello .secContainer .small {
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .secContainerHello {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .IMGColonne2 {
+    padding-left: 2rem;
+  }
+  
+  .IMGcolonne1 {
+    padding-right: 2rem;
+  }
+  
+  .column3 {
+    padding-left: 9rem;
+    padding-bottom: 15rem;
+  }
+  
+  .image-top {
+    margin-bottom: 7rem;
+  }
+  .image-bottom{
+    transform: translateY(10%);
+  }
+  .image-top{
+    transform: translateY(-40%);
+  }
+}
+
+/* @media screen and (min-width: 1140px) {
+  .secContainerHello {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .IMGColonne2 {
+    height: 400.08px;
+    width: 410.14px;
+    position: relative;
+    top: -70px;
+  }
+  .IMGcolonne1 {
+    height: 600.08px;
+    width: 600.14px;
+    
+  }
+  .IMGColonne2 {
+    padding-left: 2rem;
+  }
+  
+  .IMGcolonne1 {
+    padding-right: 2rem;
+  }
+  
+  .column3 {
+    padding-left: 7rem;
+    padding-bottom: 15rem;
+  }
+  
+  .image-top {
+    margin-bottom: 7rem;
+  }
+  
+  .Hello .secContainer h1 {
+    font-size: var(--biggestFontSize);
+  }
+  
+  .Hello .secContainer p {
+    font-size: var(--h3FontSize);
+    line-height: 30px;
+  }
+  
+  .Hello .secContainer .icon {
+    margin-right: 5px;
+  }
+  
+  .Hello .secContainer .btn {
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .Hello .secContainer .small {
+    padding-right: 2rem;
+  }
+}
+
+
+
+@media screen and (min-width: 1440px) {
+  .secContainerHello {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  
+  .IMGcolonne1 {
+    height: 400.08px;
+    width: 500.14px;
+  }
+  .IMGColonne2 {
+    padding-left: 1rem;
+  }
+  
+  .IMGcolonne1 {
+    padding-right: 2rem;
+  }
+  
+  .column3 {
+    padding-left: 7rem;
+    padding-bottom: 15rem;
+  }
+  
+  .image-top {
+    margin-bottom: 1rem;
+  }
+} */
