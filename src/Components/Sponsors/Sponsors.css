@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+
 :root {
   --primaryColor: hsl(228, 66%, 53%);
   --primaryColorLight: hsl(223, 100%, 97%);
   --primaryColorDark: hsl(216, 58%, 28%);
-  --hoverLivro:#1D8D7F;
+  --hoverLivro: #1D8D7F;
   --gradientLight: rgb(114, 145, 255);
   --bgColor: hsl(0, 0%, 100%);
   --formColor: hsl(20, 42%, 87%);
@@ -75,8 +76,8 @@
 /*mok2*/
 .Sponsors {
 
-  height: 832px;
-  width: 100%; 
+  height: 841px;
+  width: 100%;
   background: url("../../Assets/LIVRO6.png");
   background-position: center;
   background-size: contain;
@@ -88,17 +89,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 20%; 
-  padding-right: 2rem;/* Ajustez le padding pour centrer le contenu */
+  padding: 50px 20%;
+  padding-right: 2rem;
+  /* Ajustez le padding pour centrer le contenu */
   /* position: relative; */
 }
 
 .aboutSponsorContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  width: 100%;
   align-items: center;
-  gap: 2rem; /* Espace entre l'image et le texte */
-  flex-wrap: wrap; /* Wrap les éléments sur les petits écrans */
+  gap: 2rem;
+  /* Espace entre l'image et le texte */
+  flex-wrap: wrap;
+  /* Wrap les éléments sur les petits écrans */
 }
 
 .aboutSponsorImage {
@@ -109,119 +115,140 @@
 
 .aboutSponsorImage img {
   max-width: 70%;
-  height: auto; /* Conserve le rapport hauteur/largeur original */
+  height: auto;
+  /* Conserve le rapport hauteur/largeur original */
 }
 
 .Sponsors .aboutSponsorText {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centrer le contenu verticalement */
-  max-width: 540px; /* Ou la largeur maximale souhaitée pour le texte */
-  padding: 0; /* Ajustez ou supprimez le padding si nécessaire */
-  text-align: left; /* Alignement du texte à gauche */
-  margin-left: 5%; /* Ajustez la marge pour positionner le texte à droite de l'image */
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* max-width: 540px; */
+  padding: 0;
+  padding-right: 150px;
+  width: 100%;
+  text-align: left;
+  z-index: 999;
+  margin-left: 5%;
 }
 
 .Sponsors .aboutSponsorText h1 {
-  font-size: var(--biggestFontSize); /* Utilisez votre variable ou définissez une taille de police spécifique */
-  color: #ffffff; /* Couleur du texte */
-  margin-bottom: 0.5rem; /* Espace entre le h1 et le paragraphe */
-  font-weight: 600; /* La graisse de la police pour h1 */
+  font-size: var(--biggestFontSize);
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  /* width: 200px; */
+  width: 492px;
+  max-width: 492px;
 }
 
 .Sponsors .aboutSponsorText p {
-  font-size: var(--h2FontSize); /* Utilisez votre variable ou définissez une taille de police spécifique */
-  color: #ffffff; /* Couleur du texte */
+  font-size: var(--h2FontSize);
+  /* Utilisez votre variable ou définissez une taille de police spécifique */
+  color: #ffffff;
+  /* Couleur du texte */
   line-height: 1.5;
-  text-align: justify; /* Justifier le texte */
-  text-justify: inter-word; /* Hauteur de ligne pour le paragraphe */
+  text-align: justify;
+  /* Justifier le texte */
+  text-justify: inter-word;
+  /* Hauteur de ligne pour le paragraphe */
+  max-width: 492px;
 }
-.cardDiv{
-  position :relative;
+
+.cardDiv {
+  position: relative;
   padding: 2rem 1rem;
   background: hsl(0deg 0% 100% / 60%);
   border-radius: 10px;
   gap: 1rem;
 
 
-  label{
-      display:block;
-      color:var(--textColor);
+  label {
+    display: block;
+    color: var(--textColor);
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-weight: 500;
+
+  }
+
+  .label_total {
+
+    justify-content: space-between;
+    align-items: center;
+
+    .total {
+      color: var(--textColor);
+      font-size: 18px;
       padding-bottom: 10px;
-      font-size:13px;
+    }
+
+  }
+
+  .input {
+
+    height: 40px;
+    padding: 0 1rem;
+    background: rgb(239 239 239 / 67%);
+    border-radius: 3rem;
+
+    input {
+
+      background: none;
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 13px;
       font-weight: 500;
 
-  }
-  .label_total{
-
-   justify-content: space-between;
-   align-items:center;    
-   .total{
-      color : var(--textColor);
-      font-size:18px;
-      padding-bottom: 10px;
-   }
-
-  }
-  .input{
-
-        height:40px;
-        padding: 0 1rem;
-        background: rgb(239 239 239 / 67%);
-        border-radius: 3rem;
-
-      input{
-
-          background :none;
-          border:none;
-          outline:none;
-          width:100%;
-          font-size:13px;
-          font-weight: 500;
-          &::placholder{
-              font-size:13px;
-          }
+      &::placholder {
+        font-size: 13px;
       }
+    }
 
-      .icon{
-          font-size:18px;
-          color:var(--PrimaryColor)!important;
-          margin-left: 10px;
+    .icon {
+      font-size: 18px;
+      color: var(--PrimaryColor) !important;
+      margin-left: 10px;
 
-      }
-       .input[type=range]{
-          background: blue;
-       } 
+    }
+
+    .input[type=range] {
+      background: blue;
+    }
   }
 
 
-  .searchOptions{
-      position: absolute;
-    
-      background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
-      width:max-content;
-      bottom: -0.7rem;
-      column-gap : .8rem;
-      padding: 5px 1rem;
-      border-radius: 3rem;
-      left: 50%;
-      transform:translate(-50%);
-      justify-content: center;
-      cursor:pointer;
+  .searchOptions {
+    position: absolute;
+
+    background-image: linear-gradient(to right, #10b5ca, #00a5c4, #0094bd, #0084b3, #0073a8);
+    width: max-content;
+    bottom: -0.7rem;
+    column-gap: .8rem;
+    padding: 5px 1rem;
+    border-radius: 3rem;
+    left: 50%;
+    transform: translate(-50%);
+    justify-content: center;
+    cursor: pointer;
 
 
 
-      .icon{
-          font-size:18px; 
-      }
-      span{
+    .icon {
+      font-size: 18px;
+    }
 
-          font-size:13px;
+    span {
 
-      }
+      font-size: 13px;
+
+    }
   }
 }
+
 /* .iconContainer {
   display: flex;
   justify-content: space-around;
@@ -236,42 +263,53 @@
   display: flex;
   position: relative;
   top: -210px;
-  justify-content: space-evenly; /* Use space-evenly to distribute space around items */
+  justify-content: space-evenly;
+  /* Use space-evenly to distribute space around items */
   align-items: flex-start;
-  background-color: #F1F1F1; /* Adjust the background color as needed */
+  background-color: #F1F1F1;
+  /* Adjust the background color as needed */
   padding: 1rem;
-  border-radius:40px;
+  border-radius: 40px;
   box-shadow: 0 4px 8px rgb(29, 141, 127);
-  margin-top: -50px; /* Adjust for desired overlap */
-  max-width: 1000px; /* Set a max-width to control the width */
+  margin-top: -50px;
+  /* Adjust for desired overlap */
+  max-width: 1000px;
+  /* Set a max-width to control the width */
   margin-left: auto;
   margin-right: auto;
 }
 
 .icon {
   text-align: center;
-  max-width: 200px; /* Ajustez selon la largeur souhaitée */
+  max-width: 200px;
+  /* Ajustez selon la largeur souhaitée */
 }
 
 .icon img {
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
   margin-top: 3rem;
   height: 50px;
-  width: 60px;/* Ajustez l'espace entre l'image et le titre */
+  width: 60px;
+  /* Ajustez l'espace entre l'image et le titre */
 }
 
 .icon h3 {
-  font-size: 1.25rem; /* Ajustez la taille de la police */
-  color: var(--hoverLivro); /* Ajustez la couleur du texte */
-  margin-bottom: 0.5rem; /* Ajustez l'espace entre le titre et le paragraphe */
+  font-size: 1.25rem;
+  /* Ajustez la taille de la police */
+  color: var(--hoverLivro);
+  /* Ajustez la couleur du texte */
+  margin-bottom: 0.5rem;
+  /* Ajustez l'espace entre le titre et le paragraphe */
 }
 
 .icon p {
-  font-size: 0.875rem; /* Ajustez la taille de la police */
+  font-size: 0.875rem;
+  /* Ajustez la taille de la police */
   color: var(--blackColor);
   padding-top: 10px;
   /* line-height: 2; */
-  text-align: justify; /* Justifier le texte */
+  text-align: justify;
+  /* Justifier le texte */
   text-justify: inter-word;
 }
 
@@ -283,12 +321,15 @@
   }
 
   .icon:not(:last-child) {
-    margin-bottom: 2rem; /* Ajustez l'espace entre les icônes pour les écrans mobiles */
+    margin-bottom: 2rem;
+    /* Ajustez l'espace entre les icônes pour les écrans mobiles */
   }
+
   .icon {
     width: 100%;
     margin-bottom: 2rem;
   }
+
   .Sponsors {
     height: 1000px;
   }
@@ -303,20 +344,27 @@
 
 @media (max-width: 768px) {
   .Sponsors .aboutSponsorContainer {
-    flex-direction: column-reverse; /* Image en bas et texte en haut */
-    align-items: center; /* Centre les éléments sur l'axe croisé */
+    flex-direction: column-reverse;
+    /* Image en bas et texte en haut */
+    align-items: center;
+    /* Centre les éléments sur l'axe croisé */
   }
 
   .Sponsors .aboutSponsorText {
-    margin-left: 0; /* Retirez la marge gauche sur les petits écrans */
-    margin-top: 2rem; /* Espace au-dessus du texte quand au-dessus de l'image */
-    text-align: center; /* Centrer le texte sur les petits écrans */
+    margin-left: 0;
+    /* Retirez la marge gauche sur les petits écrans */
+    margin-top: 2rem;
+    /* Espace au-dessus du texte quand au-dessus de l'image */
+    text-align: center;
+    /* Centrer le texte sur les petits écrans */
   }
 
   .Sponsors .aboutSponsorText h1,
   .Sponsors .aboutSponsorText p {
-    text-align: center; /* Centrer le texte des titres et paragraphes sur les petits écrans */
+    text-align: center;
+    /* Centrer le texte des titres et paragraphes sur les petits écrans */
   }
+
   .aboutSponsorImage {
     justify-content: center;
     margin-bottom: 1rem;
@@ -333,24 +381,29 @@
   align-items: center;
   gap: 3rem;
 }
+
 .Sponsors .secContainer img {
   width: 80px;
   height: 100px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   opacity: 0.3;
 }
+
 .Sponsors .secContainer img:hover {
   opacity: 1;
 }
+
 @media screen and (max-width: 480px) {
   .Sponsors .secContainer span:nth-child(2) {
     display: none;
   }
+
   .Sponsors .secContainer span:nth-child(3) {
     display: none;
   }
-  .Sponsors{
+
+  .Sponsors {
     height: 1000px;
   }
 
@@ -359,85 +412,157 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 300px; 
+    max-width: 300px;
   }
 
   .icon {
     width: 100%;
-    margin-bottom: 2rem; /* Ajouter de l'espace entre les icônes */
+    margin-bottom: 2rem;
+    /* Ajouter de l'espace entre les icônes */
   }
 
-  .icon .imgIC{
+  .icon .imgIC {
     padding-left: 2rem !important;
-    
+
   }
 }
-@media screen and (max-width: 680px){
+
+@media screen and (max-width: 680px) {
   .Sponsors {
     height: 1200px;
-    width: 100%; 
+    width: 100%;
     background: url("../../Assets/LIVRO6.png");
-    
-    background-size:cover;
+
+    background-size: cover;
     background-repeat: repeat;
-   
-  }
-  .aboutSponsorContainer{
-    
 
   }
+
+  .aboutSponsorContainer {}
+
   .Sponsors .aboutSponsorText {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrer le contenu verticalement */
-    max-width: 500px; /* Ou la largeur maximale souhaitée pour le texte */
-    padding: 0; /* Ajustez ou supprimez le padding si nécessaire */
-    text-align:center;
+    justify-content: center;
+    /* Centrer le contenu verticalement */
+    max-width: 500px;
+    /* Ou la largeur maximale souhaitée pour le texte */
+    padding: 0;
+    /* Ajustez ou supprimez le padding si nécessaire */
+    text-align: center;
     padding-right: 4rem;
-    transform: translateY(-50%); /* Alignement du texte à gauche */
+    transform: translateY(-50%);
+    /* Alignement du texte à gauche */
     /* Ajustez la marge pour positionner le texte à droite de l'image */
   }
-  
+
   .Sponsors .aboutSponsorText h1 {
-    font-size: var(--biggestFontSize); /* Utilisez votre variable ou définissez une taille de police spécifique */
-    color: #ffffff; /* Couleur du texte */
-    margin-bottom: 0.5rem; /* Espace entre le h1 et le paragraphe */
-    font-weight: 600; /* La graisse de la police pour h1 */
+    font-size: var(--biggestFontSize);
+    /* Utilisez votre variable ou définissez une taille de police spécifique */
+    color: #ffffff;
+    /* Couleur du texte */
+    margin-bottom: 0.5rem;
+    /* Espace entre le h1 et le paragraphe */
+    font-weight: 600;
+    /* La graisse de la police pour h1 */
   }
-  
+
   .Sponsors .aboutSponsorText p {
-    font-size: 100; /* Utilisez votre variable ou définissez une taille de police spécifique */
-    color: #ffffff; /* Couleur du texte */
+    font-size: 100;
+    /* Utilisez votre variable ou définissez une taille de police spécifique */
+    color: #ffffff;
+    /* Couleur du texte */
     line-height: 1.2;
-    text-align: justify; /* Justifier le texte */
-    text-justify: inter-word; /* Hauteur de ligne pour le paragraphe */
+    text-align: justify;
+    /* Justifier le texte */
+    text-justify: inter-word;
+    /* Hauteur de ligne pour le paragraphe */
   }
 
-  .aboutSponsorImage{
+  .aboutSponsorImage {
     transform: translateY(-65%) rotate(-8deg);
-   
+
     height: 200px;
-   
+
     width: auto;
-  
-  }
- .iconContainer{
-transform: translateY(-28.5%);
-right: -11%;
 
   }
 
-  .iconContainer .icon
-  {
-    margin:-1rem;
+  .iconContainer {
+    transform: translateY(-28.5%);
+    right: -11%;
+
+  }
+
+  .iconContainer .icon {
+    margin: -1rem;
   }
 }
+
 @media screen and (min-width: 860px) {
   .Sponsors .secContainer {
     gap: 7rem;
   }
+
   .Sponsors .secContainer span img {
     width: 100px;
   }
-}/*# sourceMappingURL=Sponsors.css.map */
+}
+
+/*# sourceMappingURL=Sponsors.css.map */
+
+.section-info-and-imgs {
+  display: grid;
+  grid-template-columns: auto 380px auto;
+  width: 100%;
+  z-index: 99;
+  margin-left: -254px;
+  margin-top: -216px;
+}
+
+.section-info-and-imgs .info {
+  width: 100%;
+ 
+  padding-top: 268px;
+ 
+}
+.section-info-and-imgs .info-1 {
+  width: 100%;
+ 
+  padding-top: 268px;
+ 
+}
+.section-info-and-imgs .info-1 p {
+  width: 100%;
+  text-align: end;
+ 
+}
+
+.section-info-and-imgs .info-1 p {
+  opacity: 1 !important;
+  font-weight: 600 !important;
+  line-height: 25px !important;
+  font-size: 30px !important;
+  color: hsl(48.19deg 100% 50.2%) !important;
+ 
+}
+
+.section-info-and-imgs .info p {
+  opacity: 1 !important;
+  font-weight: 600 !important;
+  line-height: 25px !important;
+  font-size: 30px !important;
+  color: hsl(48.19deg 100% 50.2%) !important;
+ 
+}
+
+.section-info-and-imgs .aboutSponsorImage {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.img-hands{
+  margin-top: -55px;
+}

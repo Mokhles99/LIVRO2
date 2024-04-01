@@ -12,7 +12,7 @@ import Image8 from '../../Assets/mainprp.png'
 import icon1 from '../../Assets/icon1.png'
 import icon2 from '../../Assets/icon2.png'
 import icon3 from '../../Assets/icon3.png'
- //
+//
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -23,43 +23,53 @@ const Sponsors = () => {
   }, []);
   return (
     <>
-    <div className="Sponsors" id="sponsor">
-      {/* <div data-aos="fade-up" className="secContainer flex"> */}
-          <div className="aboutSponsorContainer">
-            <div className="aboutSponsorImage">
-            <img src={Image7} alt="Image Accueil"/>
-            <img src={Image8} alt="Image Accueil"/>
-          
-            </div>
-            <div className="aboutSponsorText">
+      <div className="Sponsors" id="sponsor">
+        {/* <div data-aos="fade-up" className="secContainer flex"> */}
+        <div className="aboutSponsorContainer">
+          <div className="aboutSponsorText">
             <h1> À Propos</h1>
             <p>LIVRO CLIC, une plateforme  révolutionnaire qui redéfinit la manière dont les  consommateurs accèdent aux produits essentiels.  Dans ce contexte, notre LIVRO CLIC, une plateforme  révolutionnaire qui redéfinit la manière dont les  consommateurs accèdent aux produits essentiels.  Dans ce contexte,  notre notre notre </p>
+          </div>
+          <div className="section-info-and-imgs">
+            <div className="info-1">
+              <p>sdhfsjdfn</p>
+            </div>
+            <div className="aboutSponsorImage">
+            <img src={Image7} alt="Image Accueil" />
+            <img src={Image8} alt="Image Accueil" className="img-hands" />
+          </div>
+            <div className="info">
+            <p>sdhfsjdfn</p>
+
             </div>
           </div>
-         
-      {/* </div> */}
-    </div>
-    {/* <div className="cardDiv"> */}
-    <div className="iconContainer">
-          <div className="icon"> 
-            <img className="imgIC" src={icon2}/>
-            <h3>CHOISISSEZ VOS ARTICLES</h3>
-            <p>LIVRO CLIC, une plateforme révolutionnaire qui redéfinit la manière dont les consommateurs accèdent aux produits essentiels.</p>
-          </div>
-          <div className="icon">
-            <img className="imgIC" src={icon2}/>
-            <h3>NOUS LIVRONS VOTRE COMMANDE</h3>
-            <p>LIVRO CLIC, une plateforme révolutionnaire qui redéfinit la manière dont les consommateurs accèdent aux produits essentiels.</p>
-          </div>
-          <div className="icon">
-            <img  className="imgIC" src={icon2}/>
-            <h3>CLIENT SATISFAIT</h3>
-            <p>LIVRO CLIC, une plateforme révolutionnaire qui redéfinit la manière dont les consommateurs accèdent aux produits essentiels.</p>
-          </div>
-    </div>
+        
 
-{/* </div> */}
-   </>
+        </div>
+
+        {/* </div> */}
+      </div>
+      {/* <div className="cardDiv"> */}
+      <div className="iconContainer">
+        <div className="icon">
+          <img className="imgIC" src={icon2} />
+          <h3>CHOISISSEZ VOS ARTICLES</h3>
+          <p>LIVRO CLIC, une plateforme révolutionnaire qui redéfinit la manière dont les consommateurs accèdent aux produits essentiels.</p>
+        </div>
+        <div className="icon">
+          <img className="imgIC" src={icon2} />
+          <h3>NOUS LIVRONS VOTRE COMMANDE</h3>
+          <p>LIVRO CLIC, une plateforme révolutionnaire qui redéfinit la manière dont les consommateurs accèdent aux produits essentiels.</p>
+        </div>
+        <div className="icon">
+          <img className="imgIC" src={icon2} />
+          <h3>CLIENT SATISFAIT</h3>
+          <p>LIVRO CLIC, une plateforme révolutionnaire qui redéfinit la manière dont les consommateurs accèdent aux produits essentiels.</p>
+        </div>
+      </div>
+
+      {/* </div> */}
+    </>
   );
 };
 

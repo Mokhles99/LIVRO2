@@ -83,11 +83,10 @@
 }
 
 .Subscribe .secContent .image-column2 img {
-  position: absolute;
+  position: relative;
   width: 380px;
   height: auto;
   right: 130px;
-  top: 362vh;
   transform: translateY(9%);
   z-index: 10;
 }

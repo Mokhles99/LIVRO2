@@ -9,6 +9,7 @@ import image1 from '../../Assets/bouteille.png'
 import imagecat1 from '../../Assets/catbouteille.png'
 import imagecat2 from '../../Assets/citerne.png'
 import cardBgImg from '../../Assets/card2.png'
+import cardBgImg2 from '../../Assets/card4.png'
 
 import image2 from "../../Assets/111.png"
 import image3 from "../../Assets/222.png"
@@ -37,12 +38,31 @@ const Categorie = () => {
         </div>
 
         <div className="secContentCatOne grid">
-          <div className="singlelistingCatOne">
+          {/* <div className="singlelistingCatOne">
+            <img src={cardBgImg} className="img-bg" />
             <img src={imagecat1} style={{ "width": "320px", "height": "300px" }} />
+          </div> */}
+
+          <div className="singlelistingCat singlelistingCatOne">
+            <img src={cardBgImg2} className="img-bg" />
+            <div className="imgBouteille-cat">
+              <button className="btn-water">eau</button>
+            </div>
+            <img src={imagecat1} className="imgcategorie" />
           </div>
-          <div className="singlelistingCatOne">
+
+          <div className="singlelistingCat singlelistingCatOne">
+            <img src={cardBgImg2} className="img-bg" />
+            <div className="imgBouteille-cat">
+              <button className="btn-citern">Citern</button>
+            </div>
+            <img src={imagecat2} className="imgcategorie" />
+          </div>
+
+          {/* <div className="singlelistingCatOne">
+            <img src={cardBgImg} className="img-bg" />
             <img src={imagecat2} style={{ "width": "320px", "height": "300px" }} />
-          </div>
+          </div> */}
 
 
         </div>
