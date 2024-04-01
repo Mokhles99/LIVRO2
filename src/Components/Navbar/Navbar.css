@@ -96,10 +96,15 @@ background: rgb(12, 163, 154);
     border-bottom: 1px solid var(--primaryColorLight);
   }
 }
-.Navbar .menuIcon,
+
 .Navbar .closeIcon {
   color: var(--whiteColor);
   font-size: var(--h1FontSize);
+}
+.Navbar .menuIcon{
+color: #1D8D7F;
+width: 20px;
+
 }
 .Navbar .menuIcon:hover,
 .Navbar .closeIcon:hover {
@@ -107,11 +112,11 @@ background: rgb(12, 163, 154);
 }
 .Navbar .closeIcon {
   position: absolute;
-  bottom: -25px;
+  bottom: -55px;
   right: 50%;
   left: 50%;
   transform: translate(-50%);
-  background: linear-gradient(40deg, rgb(114, 145, 255), rgb(42, 73, 198));
+  background:#1D8D7F;
   padding: 10px;
   height: 50px;
   width: 50px;

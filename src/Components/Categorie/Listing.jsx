@@ -8,8 +8,8 @@ import image11 from "../../Assets/11.png"
 import image1 from '../../Assets/bouteille.png'
 import imagecat1 from '../../Assets/catbouteille.png'
 import imagecat2 from '../../Assets/citerne.png'
-import cardBgImg from '../../Assets/card2.png'
-import cardBgImg2 from '../../Assets/card4.png'
+import cardBgImg from '../../Assets/card22.png'
+import cardBgImg2 from '../../Assets/card33.png'
 
 import image2 from "../../Assets/111.png"
 import image3 from "../../Assets/222.png"
@@ -46,7 +46,7 @@ const Categorie = () => {
           <div className="singlelistingCat singlelistingCatOne">
             <img src={cardBgImg2} className="img-bg" />
             <div className="imgBouteille-cat">
-              <button className="btn-water">eau</button>
+              <button className="btn-water">Eau</button>
             </div>
             <img src={imagecat1} className="imgcategorie" />
           </div>
@@ -54,9 +54,9 @@ const Categorie = () => {
           <div className="singlelistingCat singlelistingCatOne">
             <img src={cardBgImg2} className="img-bg" />
             <div className="imgBouteille-cat">
-              <button className="btn-citern">Citern</button>
+              <button className="btn-citern">Citerne</button>
             </div>
-            <img src={imagecat2} className="imgcategorie" />
+            <img src={imagecat2} className="imgcategorie2" />
           </div>
 
           {/* <div className="singlelistingCatOne">
@@ -77,6 +77,15 @@ const Categorie = () => {
               <button className="plusButton">+</button>
             </div>
             <img src={image1} className="imgcategorie" />
+            <span className="text-below">Marwa</span> 
+          </div>
+          <div className="singlelistingCat">
+            <img src={cardBgImg} className="img-bg" />
+            <div className="imgBouteille">
+              <button className="plusButton">+</button>
+            </div>
+            <img src={image1} className="imgcategorie"/>
+            <span className="text-below">Marwa</span> 
           </div>
           <div className="singlelistingCat">
             <img src={cardBgImg} className="img-bg" />
@@ -84,6 +93,16 @@ const Categorie = () => {
               <button className="plusButton">+</button>
             </div>
             <img src={image1} className="imgcategorie" />
+            <span className="text-below">Marwa</span> 
+          </div>
+          <div className="singlelistingCat">
+            <img src={cardBgImg} className="img-bg" />
+
+            <div className="imgBouteille">
+              <button className="plusButton">+</button>
+            </div>
+            <img src={image1} className="imgcategorie" />
+            <span className="text-below">Marwa</span> 
           </div>
           <div className="singlelistingCat">
             <img src={cardBgImg} className="img-bg" />
@@ -91,6 +110,7 @@ const Categorie = () => {
               <button className="plusButton">+</button>
             </div>
             <img src={image1} className="imgcategorie" />
+            <span className="text-below">Marwa</span> 
           </div>
           <div className="singlelistingCat">
             <img src={cardBgImg} className="img-bg" />
@@ -98,6 +118,7 @@ const Categorie = () => {
               <button className="plusButton">+</button>
             </div>
             <img src={image1} className="imgcategorie" />
+            <span className="text-below">Marwa</span> 
           </div>
           <div className="singlelistingCat">
             <img src={cardBgImg} className="img-bg" />
@@ -105,6 +126,7 @@ const Categorie = () => {
               <button className="plusButton">+</button>
             </div>
             <img src={image1} className="imgcategorie" />
+            <span className="text-below">Marwa</span> 
           </div>
           <div className="singlelistingCat">
             <img src={cardBgImg} className="img-bg" />
@@ -112,20 +134,7 @@ const Categorie = () => {
               <button className="plusButton">+</button>
             </div>
             <img src={image1} className="imgcategorie" />
-          </div>
-          <div className="singlelistingCat">
-            <img src={cardBgImg} className="img-bg" />
-            <div className="imgBouteille">
-              <button className="plusButton">+</button>
-            </div>
-            <img src={image1} className="imgcategorie" />
-          </div>
-          <div className="singlelistingCat">
-            <img src={cardBgImg} className="img-bg" />
-            <div className="imgBouteille">
-              <button className="plusButton">+</button>
-            </div>
-            <img src={image1} className="imgcategorie" />
+            <span className="text-below">Marwa</span> 
           </div>
           {/* 
               <div  className="bubblett">

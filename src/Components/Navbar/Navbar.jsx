@@ -67,7 +67,7 @@ const Navbar = () => {
       <div className={menu}>
         <ul>
           <li className="navList" onClick={scrollToHero}>Accueil</li>
-          <li className="navList">À Propos</li>
+          <li className="navList"onClick={scrollToAboutUs}>À Propos</li>
           <li className="navList" onClick={scrollToGroup}>Nos Services</li>
           <li className="navList" onClick={scrollToAboutUs}>Contact</li>
         </ul>

@@ -118,6 +118,9 @@
   height: auto;
   /* Conserve le rapport hauteur/largeur original */
 }
+.imgbot{
+transform: translateY(-3%) rotate(-10deg)translateX(-6%);
+}
 
 .Sponsors .aboutSponsorText {
   flex: 1;
@@ -270,7 +273,7 @@
   /* Adjust the background color as needed */
   padding: 1rem;
   border-radius: 40px;
-  box-shadow: 0 4px 8px rgb(29, 141, 127);
+  box-shadow: 0 4px 8px rgb(110, 112, 111);
   margin-top: -50px;
   /* Adjust for desired overlap */
   max-width: 1000px;
@@ -481,7 +484,7 @@
   }
 
   .aboutSponsorImage {
-    transform: translateY(-65%) rotate(-8deg);
+    transform: translateY(295%) rotate(-2deg);
 
     height: 200px;
 
@@ -489,9 +492,17 @@
 
   }
 
+  .info-1{
+    transform: translateY(135%) translateX(15%);
+  
+  }
+  .info{
+    transform: translateY(130%) translateX(-100%);
+  }
+
   .iconContainer {
-    transform: translateY(-28.5%);
-    right: -11%;
+    transform: translateY(7%);
+    right: -3%;
 
   }
 
@@ -565,4 +576,5 @@
 
 .img-hands{
   margin-top: -55px;
+  transform: translateY(2%);
 }

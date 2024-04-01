@@ -23,7 +23,7 @@ const Sponsors = () => {
   }, []);
   return (
     <>
-      <div className="Sponsors" id="sponsor">
+      <div className="Sponsors" id='about'>
         {/* <div data-aos="fade-up" className="secContainer flex"> */}
         <div className="aboutSponsorContainer">
           <div className="aboutSponsorText">
@@ -32,14 +32,14 @@ const Sponsors = () => {
           </div>
           <div className="section-info-and-imgs">
             <div className="info-1">
-              <p>sdhfsjdfn</p>
+              <p>COMMENT</p>
             </div>
             <div className="aboutSponsorImage">
-            <img src={Image7} alt="Image Accueil" />
+            <img src={Image7} alt="Image Accueil" className="imgbot" />
             <img src={Image8} alt="Image Accueil" className="img-hands" />
           </div>
             <div className="info">
-            <p>sdhfsjdfn</p>
+            <p>ÇA MARCHE ?</p>
 
             </div>
           </div>

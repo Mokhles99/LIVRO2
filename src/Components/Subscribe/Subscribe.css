@@ -24,6 +24,7 @@
   --borderRadius: 10px;
 }
 
+
 .Subscribe .secContent {
   background: var(--hoverLivro);
   border-radius: 30px;
@@ -84,10 +85,10 @@
 
 .Subscribe .secContent .image-column2 img {
   position: relative;
-  width: 380px;
+  width: 350px;
   height: auto;
-  right: 130px;
-  transform: translateY(9%);
+  right: 10px;
+  transform: translateY(-30%);
   z-index: 10;
 }
 
@@ -124,9 +125,9 @@
    
   }
   .Subscribe .secContent .image-column2 img {
-    width: 170px;
-    right: 195px;
-    transform: translateY(970%);
+    width: 200px;
+    right: 25px;
+    transform: translateY(10%);
   }
   .Subscribe .secContent .image-column img {
     width: 180px;
