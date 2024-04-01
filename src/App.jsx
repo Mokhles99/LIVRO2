@@ -6,7 +6,7 @@ import Sponsors from "./Components/Sponsors/Sponsors";
 import Popular from "./Components/Popular/Popular";
 import Listing from "./Components/Listing/Listing";
 import About from "./Components/About/About";
-import Contact from "./Components/Contact/Contact";
+// import Contact from "./Components/Contact/Contact";
 import Subscribe from "./Components/Subscribe/Subscribe";
 import Footer from "./Components/Footer/Footer";
 import Historique from './Components/Historique/Historique';

@@ -53,17 +53,18 @@
   color: var(--whiteColor);
 }
 .Listing .secContainer .secContentCat .singlelistingCat {
-
+  flex: 1 0 21%;
   margin-top: 3rem;
   position: relative;
-  background: white;
   height: 250px;
-  box-shadow: 0 3px 5px rgb(231, 230, 230);
-  padding: 1.5rem;
+  padding: 0;
   text-align: center;
-  border-radius: 40px;
+  border-radius: 21px;
   transition: 0.4s ease;
-
+  background-color: #ebebeb;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
  
 }
 .secContentCatOne{
@@ -88,11 +89,11 @@
 }
 .imgBouteille{
   position: absolute;
-  height: 50px !important;
+  height: 49px !important;
   width: 80px !important;
-  right: 50%;
-  left: 70%;
-  background: rgb(241,241,241);
+  right: 0px;
+  top: 11px;
+  background: transparent;
   border-radius:30% 0 30% 0 !important;
   overflow: hidden;
   transform: translateX(-80%);
@@ -132,8 +133,8 @@
   top: 50%; /* Center the button */
   left: 50%; /* Center the button */
   transform: translate(-50%, -50%); /* Offset the button to the exact center */
-  width: 40px; /* Size of the button */
-  height: 40px; /* Size of the button */
+  width: 32px; /* Size of the button */
+  height: 32px; /* Size of the button */
   border-radius: 50%; /* Make it round */
   background-color: #1D8D7F; /* Green background */
   color: white; /* White text */
@@ -162,7 +163,9 @@
 }
 
 .imgcategorie{
-  transform: translateY(-80px);
+  transform: translateY(-45px);
+  width: 100%;
+  max-width: 150px;
 }
 .Listing .secContainer .secContentCat .singlelistingCat:hover .imgDiv img {
   scale: 1.1;
@@ -233,17 +236,32 @@
   .Listing .secContainer .secContentCatOne {
     grid-template-columns: repeat(2, 1fr);
   }
-  .Listing .secContainer .secContentCat {
+  /* .Listing .secContainer .secContentCat {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
 }
 @media screen and (min-width: 1100px) {
-  .Listing .secContainer .secContentCat {
+  /* .Listing .secContainer .secContentCat {
     gap: 3rem;
     grid-template-columns: repeat(4, 1fr);
-  }
+  } */
   .Listing .secContainer .secContentCatOne {
     gap: 3rem;
     grid-template-columns: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=Listing.css.map */
+
+.Listing .secContainer .secContentCat {
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+.img-bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
