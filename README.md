@@ -1,5 +1,5 @@
 # React + Vite
-Developped by ENG. MOKHLES MBAREK   , STE: SILVER LINE SOLUTION
+Developped by ENG. MOKHLES MBAREk
 
 # build
 npm run build
