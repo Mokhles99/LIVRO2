@@ -12,12 +12,14 @@ import Footer from "./Components/Footer/Footer";
 import Historique from './Components/Historique/Historique';
 import Lists from './Components/Lists/Listing';
 import Categorie from './Components/Categorie/Listing';
+import CartIcon from './Components/Card/Cardicon';
 
 function App() {
 
   return (
     <>
       <Navbar/>
+      <CartIcon />
       <Hello/>
       <Sponsors/>
        {/* <Popular/>  */}

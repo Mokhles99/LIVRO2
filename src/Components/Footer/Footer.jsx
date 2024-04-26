@@ -7,6 +7,7 @@ import { AiFillInstagram} from 'react-icons/ai';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import image from '../../Assets/LIVRO.png';
+import imagefooter from '../../Assets/livrofooter.png'
 import vision from '../../Assets/visionfooter.png'
 
 const Footer = () => {
@@ -19,16 +20,16 @@ const Footer = () => {
       <div className='secContainer'>
         {/* Column 1 - Logo */}
         <div className='footerColumn'>
-          <img src={image} alt='Logo' className='footerLogo' />
+          <img src={imagefooter} alt='Logo' className='footerLogo' />
         </div>
 
         {/* Column 2 - Information Links */}
         <div className='footerColumn'>
           <span className='linkTitle'>Information</span>
-          <a href='#'>Accueil</a>
-          <a href='#'>À propos</a>
-          <a href='#'>Nos services</a>
-          <a href='#'>Contact</a>
+          <a href='#' className='linkTitleP'>Accueil</a>
+          <a href='#' className='linkTitleP'>À propos</a>
+          <a href='#' className='linkTitleP'>Nos services</a>
+          <a href='#' className='linkTitleP'>Contact</a>
         </div>
 
         {/* Column 3 - Contact */}
@@ -41,6 +42,7 @@ const Footer = () => {
         {/* Column 4 - Social Links */}
         <div className='footerColumn'>
   <span className='linkTitle'>Suivez-nous</span>
+    
   <div className="social-icons">
     <a href="https://facebook.com" className="icon">
       <ImFacebook />
@@ -60,9 +62,10 @@ const Footer = () => {
         {/* Column 5 - Newsletter */}
         <div className='footerColumn'>
           <span className='linkTitle'>Abonnez-vous</span>
-          <div class="form-container">
-  <input type="email" class="input-email" placeholder="Écrivez votre adresse e-mail"/>
-  <button class="subscribe-button">S'abonner</button>
+          <span className='contactInfo'> À notre newsletter pour  recevoir nos dernières nouvelles. </span>
+          <div className="form-container">
+  <input type="email" className="input-email" placeholder="Écrivez votre adresse e-mail"/>
+  <button className="subscribe-button">S'abonner</button>
 </div>
         </div>
       </div>

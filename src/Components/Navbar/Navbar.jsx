@@ -6,6 +6,7 @@ import { SiTreehouse } from "react-icons/si";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { PiDotsNineBold } from "react-icons/pi";
 import image from "../../Assets/LIVRO.png";
+import { FiShoppingCart } from "react-icons/fi";
 // import image from "../../Assets/cogeb.png";
 
 const Navbar = () => {
@@ -74,8 +75,12 @@ const Navbar = () => {
         {/* icon close navbar on small devices */}
         <AiFillCloseCircle className="icon closeIcon" onClick={removenavbar} />
       </div>
-      <button className="contactBtn" onClick={scrollToContact} >Start Now</button>
+      <div className="navbar-right">
+        <button className="contactBtn" onClick={scrollToContact}>Start Now</button>
+        {/* <FiShoppingCart className="cartIcon" style={{color:'yellow',fontSize:'30'}}/> */}
+      </div>
 
+      
       {/* icon open/show navbar on small devices */}
       <PiDotsNineBold className="icon menuIcon" onClick={shownavbar} />
     </div>
