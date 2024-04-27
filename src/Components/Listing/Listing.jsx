@@ -33,8 +33,7 @@ import image3 from "../../Assets/doc3/IMG3.jpg";
 // import image4 from "../../Assets/House (2).png";
 import image4 from "../../Assets/zit.jpg";
 // import image5 from "../../Assets/House (1).jpg";
-import image5 from "../../Assets/bat25.jpg";
-import image6 from "../../Assets/House (2).jpg";
+
 
 import image7 from "../../Assets/import.jpg"
 

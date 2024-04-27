@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./About.css";
 import Accordion from "./Accordion";
 
-import image from '../../Assets/Helo2.png'
+
 
 import Aos from "aos";
 import "aos/dist/aos.css";

@@ -5,7 +5,7 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import Typography from '@mui/material/Typography';
-import cogeb from "../../Assets/NVLOGOCOGEB.png";
+
 
 export default function FormDialog({ open, onClose }) {
   const [formValues, setFormValues] = useState({
