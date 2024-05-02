@@ -44,16 +44,16 @@ const Footer = () => {
   <span className='linkTitle'>Suivez-nous</span>
     
   <div className="social-icons">
-    <a href="https://facebook.com" className="icon">
+    <a href="https://facebook.com" className="iconf">
       <ImFacebook />
     </a>
-    <a href="https://twitter.com" className="icon">
+    <a href="https://twitter.com" className="iconf">
       <BsTwitter />
     </a>
-    <a href="https://instagram.com" className="icon">
+    <a href="https://instagram.com" className="iconf">
       <AiFillInstagram />
     </a>
-    <a href="https://instagram.com" className="icon">
+    <a href="https://instagram.com" className="iconf">
       <AiFillInstagram />
     </a>
   </div>

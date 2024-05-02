@@ -240,6 +240,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';  
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -250,9 +251,11 @@ import './cardicon.css';
 import { getCarttwo, updateCartWithUserInfo } from '../../actions/carttwo.actions';
 import IconButton from '@mui/material/IconButton';
 import AddIcon from '@mui/icons-material/Add';
+import DoDisturbOnOutlinedIcon from '@mui/icons-material/DoDisturbOnOutlined';
+import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import RemoveIcon from '@mui/icons-material/Remove';
-import AssignmentIcon from '@mui/icons-material/Assignment';
-
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';import AssignmentIcon from '@mui/icons-material/Assignment';
+import SendIcon from '@mui/icons-material/Send';
 import { removeItemFromCart,updateItemQuantity } from '../../actions/carttwo.actions'; 
 
 function CartIcon() {
@@ -312,7 +315,7 @@ function CartIcon() {
       left: '50%',
       transform: 'translate(-50%, -50%)',
       width: 350,
-      bgcolor: '#1D8D7F',
+      bgcolor: '#f1f1f1',
       borderRadius: '30px',
       boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)', // Ombre plus douce avec dispersion
       p: 4,
@@ -332,8 +335,11 @@ function CartIcon() {
             backgroundColor: '#ffd700', 
             color: 'black',
             width: '10px',
-            height: '10px',
-            fontSize: '0.5rem',
+            height: '20px',
+            fontSize: '0.8rem',
+            transform:'translateY(-60%)',
+            right: '-18px', // Décale le badge de 10 pixels vers la droite
+           
         },
     }));
 
@@ -376,42 +382,43 @@ function CartIcon() {
         <>
             <div className="cart-icon-fixed" onClick={handleOpenModal}>
                 <StyledBadge badgeContent={itemCount}>
-                    <ShoppingCartIcon style={{ color: '#24a295', fontSize: 25 }} />
+                    <LocalMallOutlinedIcon style={{ color: '#24a295', fontSize: 25 }} />
                 </StyledBadge>
             </div>
             <Modal open={modalOpen} onClose={handleCloseModal} aria-labelledby="cart-modal-title" aria-describedby="cart-modal-description">
             <Box sx={modalStyle}>
             <Typography 
-    id="cart-modal-title" 
-    variant="h6" 
-    component="h2" 
-    className="goldenCursiveText"
->
-    Panier
-</Typography>
+                            id="cart-modal-title" 
+                            variant="h6" 
+                            component="h2" 
+                            className="goldenCursiveText"
+                        >
+                            Panier
+                        </Typography>
 
                 <List sx={{ width: '100%', maxHeight: 200, overflow: 'auto', color: 'black' }}>
                     {Object.keys(itemQuantities).map(itemId => (
                         <ListItem key={itemId} alignItems="flex-start">
                             <ListItemText primary={`${carttwo.items.find(item => item._id === itemId).product.name} x ${itemQuantities[itemId]}`} />
-                            <IconButton onClick={() => handleIncreaseQuantity(itemId)}><AddIcon /></IconButton>
-                            <IconButton onClick={() => handleDecreaseQuantity(itemId) }><RemoveIcon /></IconButton>
+                            <IconButton onClick={() => handleIncreaseQuantity(itemId)}><ControlPointIcon sx={{color:'#11A592'}}/></IconButton>
+                            <IconButton onClick={() => handleDecreaseQuantity(itemId) }><DoDisturbOnOutlinedIcon sx={{color:'#ce9d29'}}/></IconButton>
+                            <IconButton><HighlightOffIcon sx={{color:'red'}}/></IconButton>
                         </ListItem>
                     ))}
                 </List>
 
                 <Button onClick={handleOpenUserInfoModal} variant="contained"  sx={{
-    mt: 2,
-    backgroundColor: '#fbfbfb', // Couleur de fond
-    color: '#ce9d29', // Couleur du texte
-    border: '2px solid #ce9d29', // Bordure
-    fontSize: '15px', 
-    borderRadius: '20px',// Taille de la police
-    '&:hover': { // Styles pour l'état hover
-      backgroundColor: '#ce9d29', // Changement de la couleur de fond au survol
-      color: '#fbfbfb' // Changement de la couleur du texte au survol
-    }
-  }}>Devis <AssignmentIcon sx={{ ml: 1 }} /> </Button>
+                            mt: 2,
+                            backgroundColor: '#fbfbfb', // Couleur de fond
+                            color: '#ce9d29', // Couleur du texte
+                            // border: '2px solid #11A592', // Bordure
+                            fontSize: '15px', 
+                            borderRadius: '20px',// Taille de la police
+                            '&:hover': { // Styles pour l'état hover
+                            backgroundColor: '#ce9d29', // Changement de la couleur de fond au survol
+                            color: '#fbfbfb' // Changement de la couleur du texte au survol
+                            }
+                        }}>Devis <AssignmentIcon sx={{ ml: 1 }} /> </Button>
             </Box>
 
             </Modal>
@@ -424,13 +431,25 @@ function CartIcon() {
                             </ListItem>
                         ))}
                     </List>
-                    <Typography id="cart-modal-title" variant="h6" component="h2">Informations utilisateur</Typography>
+                    <Typography id="cart-modal-title" variant="h6" component="h2" sx={{color:'gray'}}>Informations utilisateur</Typography>
                     <TextField label="Nom" variant="outlined" name="name" value={userInfo.name} onChange={handleUserInfoChange} fullWidth sx={{ mt: 2 }} />
                     <TextField label="Prénom" variant="outlined" name="surname" value={userInfo.surname} onChange={handleUserInfoChange} fullWidth sx={{ mt: 2 }} />
                     <TextField label="Email" variant="outlined" name="email" value={userInfo.email} onChange={handleUserInfoChange} fullWidth sx={{ mt: 2 }} />
                     <TextField label="Numéro de téléphone" variant="outlined" name="phoneNumber" value={userInfo.phoneNumber} onChange={handleUserInfoChange} fullWidth sx={{ mt: 2 }} />
                     <TextField label="Message" variant="outlined" name="message" multiline rows={4} value={userInfo.message} onChange={handleUserInfoChange} fullWidth sx={{ mt: 2 }} />
-                    <Button type="submit" variant="contained" sx={{ mt: 2, bgcolor: 'primary.main' }}>Envoyer</Button>
+                    <Button type="submit" variant="contained" sx={{
+                                            mt: 2,
+                                            backgroundColor: '#fbfbfb', // Couleur de fond
+                                            color: '#ce9d29', // Couleur du texte
+                                            // border: '2px solid #ce9d29',
+                                            fontSize: '15px', 
+                                            borderRadius: '20px',// Taille de la police
+                                            '&:hover': { // Styles pour l'état hover
+                                            backgroundColor: '#ce9d29', // Changement de la couleur de fond au survol
+                                            color: '#fbfbfb' // Changement de la couleur du texte au survol
+                                            }
+                                        }}> Envoyer <SendIcon sx={{ ml: 1 }} />
+                                        </Button>
                 </Box>
             </Modal>
         </>

@@ -17,15 +17,12 @@ function App() {
   return (
     <>
       <Navbar/>
-      <CartIcon />
+      {/* <CartIcon /> */}
       <Hello/>
       <Sponsors/>
-       {/* <Popular/>  */}
-       {/* <Historique/> */}
-       {/* <Listing/> */}
+      
        <Lists/>
-      {/* <About/>
-       <Contact/> */}
+    
       <Subscribe/> 
       <Categorie/>
       <Footer/>

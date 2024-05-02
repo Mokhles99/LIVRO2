@@ -6,6 +6,7 @@ import { SiTreehouse } from "react-icons/si";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { PiDotsNineBold } from "react-icons/pi";
 import image from "../../Assets/LIVRO.png";
+import CartIcon from "../Card/Cardicon";
 import { FiShoppingCart } from "react-icons/fi";
 // import image from "../../Assets/cogeb.png";
 
@@ -33,8 +34,8 @@ const Navbar = () => {
   };
   window.addEventListener("scroll", addBG);
 
-  const scrollToContact = () => {
-    const contactElement = document.getElementById("contact");
+  const scrollToCat = () => {
+    const contactElement = document.getElementById("categorie");
     if (contactElement) {
       contactElement.scrollIntoView({ behavior: "smooth" });
     }
@@ -70,14 +71,15 @@ const Navbar = () => {
           <li className="navList" onClick={scrollToHero}>Accueil</li>
           <li className="navList"onClick={scrollToAboutUs}>À Propos</li>
           <li className="navList" onClick={scrollToGroup}>Nos Services</li>
-          <li className="navList" onClick={scrollToAboutUs}>Contact</li>
+          <li className="navList" onClick={scrollToCat}>Catégories</li>
         </ul>
         {/* icon close navbar on small devices */}
         <AiFillCloseCircle className="icon closeIcon" onClick={removenavbar} />
       </div>
       <div className="navbar-right">
-        <button className="contactBtn" onClick={scrollToContact}>Start Now</button>
-        {/* <FiShoppingCart className="cartIcon" style={{color:'yellow',fontSize:'30'}}/> */}
+        {/* <button className="contactBtn" onClick={scrollToContact}>Start Now</button> */}
+        {/* <FiShoppingCart className="cartIcon" style={{color:'rgb(28,124,108)',fontSize:'30'}}/> */}
+        <CartIcon/>
       </div>
 
       

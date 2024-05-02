@@ -26,6 +26,8 @@
 .Footer {
   /* background:url("../../Assets/BG1.png"); */
   padding: 2rem 0;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .Footer .secContainer {
   display: grid;
@@ -81,7 +83,7 @@
 
 .Footer .footerBottom .line {
   height: 1px;
-  width: 80%;
+  width: 90%;
   background-color: gray; /* or use your color of choice */
   margin-bottom: 10px;
 }
@@ -147,7 +149,7 @@
 }
 
 /* Style each icon specifically */
-.footerColumn .social-icons .icon {
+.footerColumn .social-icons .iconf {
   font-size: 14px; /* Adjust the size of the icon */
 }
 

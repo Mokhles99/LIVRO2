@@ -179,13 +179,13 @@ const Categorie = () => {
   const isDataFour = currentData === datafour;
   const isDataFive = currentData == datafive
   return (
-    <div className="Listing section">
+    <div className="Listing section" id='categorie'>
       <div className="secContainer container">
         <div className="secHeader">
 
           <h1 data-aos="fade-up" className="title" style={{ "color": "#1D8D7F" }}>
             Nos Catégories
-            <span className="orangeDot"> </span>
+            <span className="orangeDot"> .</span>
           </h1>
         </div>
 

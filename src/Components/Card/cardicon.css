@@ -2,18 +2,21 @@
 
 .cart-icon-fixed {
     position: fixed;
-    right: 20px;
-    top: 400px; /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
+    right: 200px;
+    top: 35px; /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
     z-index: 1000; /* Assurez-vous qu'elle reste visible au-dessus des autres contenus */
-    background-color:rgba(172, 169, 169, 0.344);
-    ; /* Fond semi-transparent pour la visibilité */
+    background-color:#b2bab9;
+  
+   /* Fond semi-transparent pour la visibilité */
     padding: 8px;
     border-radius: 50%; /* Style circulaire pour l'icône */
 }
 .goldenCursiveText {
-  font-family: 'cursive';
-  color: #DAA520;
-  font-size: 24px;
+  /* font-family: 'cursive' !important; */
+  color: #ffff;
+  font-size: 20px !important;
+  font-weight: bold !important;
+
 }
 
 

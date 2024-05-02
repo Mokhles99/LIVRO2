@@ -28,8 +28,8 @@
 
 .Listing{
   /* background: url('../../Assets/BG1.png'); */
-  margin-bottom: 15rem;
-  margin-top: 8rem;
+  /* margin-bottom: 15rem; */
+  /* margin-top: 8rem; */
 }
 .secContentCat{
   justify-content: space-between;
@@ -62,7 +62,7 @@
 }
 .Listing .secContainer .secContentCat .singlelistingCat {
   flex: 1 0 21%;
-  margin-top: 3rem;
+  margin-top: 6rem;
   position: relative;
   height: 190px;
   padding: 0;
@@ -346,16 +346,17 @@
 }
 
 .imgcategorie{
-  transform: translateY(-60px);
+  transform: translateY(-50px);
   width: 100%;
   max-width: 150px;
+  
 }
 
 .imgcategorie2{
-  transform: translateY(-60px);
+  transform: translateY(-40px);
   width: 100%;
   max-width: 180px;
-  height: 250px;
+  height: 230px;
 }
 .Listing .secContainer .secContentCat .singlelistingCat:hover .imgDiv img {
   scale: 1.1;
@@ -428,7 +429,14 @@
   }
 
   .Listing .secContainer .secContentCat {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .secContentCat {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux éléments par ligne */
+    gap: 30px;  /* Conservez le même espacement que dans votre style par défaut */
+    justify-content: space-between; /* S'assure que les éléments sont répartis uniformément */
   }
 
 
@@ -437,7 +445,8 @@
     top: 30%; /* Center the button */
     left: 40%; /* Center the button */
     transform: translate(-50%, -50%); 
-    transform: translateY(-38%);/* Offset the button to the exact center */
+    transform: translateY(-38%) ;
+  /* Offset the button to the exact center */
     width: 32px; /* Size of the button */
     height: 32px; /* Size of the button */
     border-radius: 50%; /* Make it round */
@@ -455,6 +464,15 @@
     grid-template-columns: repeat(2, 1fr);
   } */
 }
+
+@media screen and (max-width: 600px){
+
+  .Listing .secContainer .secContentCat {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+
 @media screen and (min-width: 1100px) {
   /* .Listing .secContainer .secContentCat {
     gap: 3rem;
@@ -464,6 +482,7 @@
     gap: 3rem;
     grid-template-columns: repeat(2, 1fr);
   }
+
 }/*# sourceMappingURL=Listing.css.map */
 
 .Listing .secContainer .secContentCat {

@@ -48,6 +48,11 @@
   color: var(--whiteColor);
   margin-right: 0.5rem;
 }
+.Navbar .menuIcon{
+  color: #1D8D7F !important;
+  width: 20px;
+  
+  }
 .Navbar .logoDiv span {
   color: var(--whiteColor);
   font-size: var(--h2FontSize);
@@ -62,7 +67,7 @@
 border: none;
 outline: none;
 cursor: pointer;
-border-radius: 5px;
+border-radius: 15px;
 padding: 0.8rem 1.2rem;
 color: var(--whiteColor);
 font-weight: 500;
@@ -102,7 +107,7 @@ background: rgb(12, 163, 154);
   font-size: var(--h1FontSize);
 }
 .Navbar .menuIcon{
-color: #1D8D7F;
+color: #1D8D7F !important;
 width: 20px;
 
 }

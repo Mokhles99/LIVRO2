@@ -24,7 +24,7 @@ const Lists = () => {
         <div className="secHeader">
          
           <h1 data-aos="fade-up" className="title" style={{"color":"#1D8D7F"}}>
-          Nos SERVICES
+          Nos Services
             <span className="orangeDot"> .</span>
           </h1>
         </div>
@@ -32,11 +32,11 @@ const Lists = () => {
         <div className="secContent grid">
           
             
-              <div  className="singleListing">
+              <div  className="singleListing1">
                <img src={image1} />
               </div>
               <div  className="singleListing" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '300px' }}>
-              <img src={image2} style={{"height":"300px","width":"auto","alignItems":"center"}}/>
+              <img src={image3} style={{"height":"300px","width":"auto","alignItems":"center"}}/>
               </div>
               <div  className="singleListing">
               <p className="paraStyle">Un bon service clientèle est essentiel pour répondre aux besoins , traiter les commandes, gérer les problèmes éventuels et fournir des informations sur les produits et services.
@@ -46,16 +46,16 @@ const Lists = () => {
                  <p className="paraStyle">Les clients peuvent suivre en temps réel le statut de leur commande via notre application mobile "Livro Clic"</p>
               </div>
               <div  className="singleListing" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '300px' }}>
-              <img src={image3}style={{"height":"300px","width":"auto"}}/>
+              <img src={image6}style={{"height":"300px","width":"auto"}}/>
               </div>
-              <div  className="singleListing">
-              <img src={image4}/>
-              </div>
-              <div  className="singleListing">
+              <div  className="singleListing1">
               <img src={image5}/>
               </div>
+              <div  className="singleListing1">
+              <img src={image4}/>
+              </div>
               <div  className="singleListing" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '300px' }}>
-              <img src={image6}style={{"height":"300px","width":"auto"}}/>
+              <img src={image2}style={{"height":"300px","width":"auto"}}/>
               </div>
               <div  className="singleListing">
               <p className="paraStyle">Les services de livraison à domicile offrent souvent plusieurs méthodes de paiement y compris le paiement en ligne par carte de crédit/débit ou même le paiement à la livraison en espèces.

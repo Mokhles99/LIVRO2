@@ -6,9 +6,9 @@ import "./Sponsors.css";
 import Image7 from '../../Assets/LIVRO7.png'
 import Image8 from '../../Assets/mainprp.png'
 
-import icon1 from '../../Assets/icon1.png'
-import icon2 from '../../Assets/icon2.png'
-import icon3 from '../../Assets/icon3.png'
+import icon1 from '../../Assets/icontlf.png'
+import icon2 from '../../Assets/iconcamion.png'
+import icon3 from '../../Assets/iconsmile.png'
 //
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -49,18 +49,18 @@ const Sponsors = () => {
       {/* <div className="cardDiv"> */}
       <div className="iconContainer">
         <div className="icon">
-          <img className="imgIC" src={icon2} />
+          <img className="imgIC1" src={icon1} />
           <h3>CHOISISSEZ VOS ARTICLES</h3>
           <p>LIVRO CLIC, une plateforme révolutionnaire qui redéfinit la manière dont les consommateurs accèdent aux produits essentiels.</p>
         </div>
         <div className="icon">
-          <img className="imgIC" src={icon2} />
+          <img className="imgIC2" src={icon2} />
           <h3>NOUS LIVRONS VOTRE COMMANDE</h3>
           <p>LIVRO CLIC, une plateforme révolutionnaire qui redéfinit la manière dont les consommateurs accèdent aux produits essentiels.</p>
         </div>
         <div className="icon">
-          <img className="imgIC" src={icon2} />
-          <h3>CLIENT SATISFAIT</h3>
+          <img className="imgIC3" src={icon3} />
+          <h3>CLIENT<br/>SATISFAIT</h3>
           <p>LIVRO CLIC, une plateforme révolutionnaire qui redéfinit la manière dont les consommateurs accèdent aux produits essentiels.</p>
         </div>
       </div>
